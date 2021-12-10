@@ -1,0 +1,295 @@
+* {
+	font-family: "Noto Sans KR", sans-serif;
+	list-style: none;
+	text-decoration: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 100;
+}
+.contents1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.contents2 {
+	font-size: 18px;
+}
+.contents3 {
+	font-size: 14px;
+	font-weight: 100;
+}
+.contents1_bold {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* JQuery이용하여 페이지의 첫 시작부분에 나타내주는 부분 */
+.open_page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 1600px;
+	height: 1500px;
+	background-color: #333;
+}
+
+.loader {
+	border: 16px solid rgb(202, 202, 202);
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	animation: spin 2s linear infinite;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	background-color: #333;
+}
+@keyframes spin {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+/* 헤더부분 */
+
+.result {
+	font-size: 20px;
+}
+
+.intro_bg {
+	background-image: url("../img/intro.png");
+	width: 100%;
+	height: 714px;
+}
+
+.header {
+	width: 1280px;
+	margin: auto;
+	display: flex;
+	height: 86px;
+}
+.searchArea {
+	width: 300px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	margin-top: 24px;
+}
+.searchArea > form > input {
+	border: none;
+	width: 250px;
+	height: 40px;
+	background: rgba(0, 0, 0, 0);
+	color: #fff;
+	padding-left: 10px;
+}
+.searchArea > form > span {
+	width: 50px;
+	color: #fff;
+}
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	width: calc(1280px - 300px);
+	line-height: 86px;
+}
+.nav > li {
+	margin-left: 84px;
+}
+
+.nav > li > a {
+	color: #fff;
+}
+
+/* 메인부분 */
+.amount {
+	position: relative;
+	top: -66px;
+	display: flex;
+	width: 1280px;
+	background: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	margin: auto;
+}
+.amount > li {
+	flex: 1;
+	height: 132px;
+}
+.amount > li > div {
+	text-align: center;
+	margin-top: 37px;
+	height: 57px;
+}
+
+.amount > li:not(:last-child) > div {
+	border-right: 1px solid #e1e1e1;
+}
+.intro_text {
+	width: 100%;
+	margin: 231px 0 231px 400px;
+	text-align: center;
+}
+.intro_text h1 {
+	color: #fff;
+}
+
+/* 메인부분에 main_text0 */
+
+.main_text0 {
+	width: 100%;
+	height: 601px;
+	margin-top: -132px;
+	background: #f1f2f3;
+}
+.main_text0 > h1 {
+	padding-top: 116px;
+	text-align: center;
+}
+.main_text0 > .contents1 {
+	text-align: center;
+}
+
+.icons {
+	display: flex;
+	width: 1280px;
+	height: 302px;
+	margin: auto;
+}
+.icons > li {
+	flex: 1;
+	background: white;
+	margin-top: 49px;
+	height: 302px;
+	text-align: center;
+}
+.icons > li > .icon_img {
+	margin-top: 18px;
+}
+
+.icons > li:not(:last-child) {
+	margin-right: 20px;
+}
+
+.icons .contents2 {
+	width: 280px;
+	margin: auto;
+	letter-spacing: -1px;
+}
+.more {
+	width: 100px;
+	height: 30px;
+	background: #2f7af4;
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;
+	margin: 25px auto;
+}
+
+/* 메인 main_text1*/
+
+.main_text1 {
+	width: 100%;
+	height: 659px;
+}
+.main_text1 > h1 {
+	padding-top: 50px;
+	text-align: center;
+}
+.main_text1 > .contents1 {
+	text-align: center;
+}
+.service {
+	width: 1280px;
+	display: flex;
+	margin: 49px auto;
+	height: 427px;
+}
+
+.service > .contents2 {
+	padding: 20px;
+}
+.service > .contents2 > h2 {
+	margin-bottom: 27px;
+}
+
+/* 메인 main_text2 */
+.main_text2 {
+	width: 100%;
+	height: 418px;
+	background-image: url("../img/contact.png");
+}
+
+.main_text2 > ul {
+	display: flex;
+	padding-top: 138px;
+}
+
+.main_text2 > ul > li {
+	flex: 1;
+	text-align: center;
+}
+.main_text2 > ul > li > div,
+.main_text2 > ul > li > div > h1 {
+	color: #fff;
+}
+.more2 {
+	width: 220px;
+	height: 40px;
+	border: 1px solid #fff;
+	color: #fff;
+	line-height: 40px;
+	cursor: pointer;
+	margin: 16px auto;
+}
+
+footer {
+	display: flex;
+	background: #1f1f1f;
+	padding: 30px;
+}
+footer > div:first-child {
+	text-align: center;
+	color: #fff;
+}
+footer > div:last-child {
+	color: #fff;
+	padding-left: 40px;
+}
+/* 맨위로 가기 버튼 */
+#go-top {
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	outline: 0;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+/* 움직이는 텍스트 */
+@keyframes cursor {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.text {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 50px;
+	height: 40px;
+	border-right: 0.05em solid black;
+	animation: cursor 0.5s ease infinite;
+}
