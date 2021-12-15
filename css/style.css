@@ -68,7 +68,7 @@ h1 {
 }
 
 .intro_bg {
-	background-image: url("../img/intro.png");
+	background-image: url("../img/ironman2.jpeg");
 	width: 100%;
 	height: 714px;
 }
@@ -227,7 +227,7 @@ h1 {
 .main_text2 {
 	width: 100%;
 	height: 418px;
-	background-image: url("../img/contact.png");
+	background-image: url("../img/ironman.jpeg");
 }
 
 .main_text2 > ul {
